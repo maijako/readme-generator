@@ -21,7 +21,7 @@ App usage goes here.
 
 ## Licence
 
-Licensing option goes here.
+Licensing options go her for the user to choose from.
 
 ## Contributing
 
