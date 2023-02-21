@@ -3,12 +3,24 @@ function generateMarkdown(data) {
   //variables to store license badge and link date
   let licenseBadge = ""
   let licenseLink = ""
+//ES6 obj destructuring to avoid re-typing data.variablename
+const {
+  title,
+  description,
+  installation,
+  usage,
+  license,
+  contributing,
+  tests,
+  gitUserName,
+  gitUserLink,
+  userEmail
+} = data;
 
-
-  return `# ${data.title}
+  return `# ${title}
   
   ## Description
-  ${data.description}
+  ${description}
   
   ## Table of Contents
   1. [Installation](#installation)
@@ -19,26 +31,26 @@ function generateMarkdown(data) {
   6. [Questions](#questions)
   
   ## Installation
-  ${data.installation}
+  ${installation}
   
   ## Usage
-  ${data.usage}
+  ${usage}
   
   
   ## Licence
   
-  This project uses ${data.license}.
+  This project uses ${license}.
   
   ## Contributing
-  ${data.contributing}
+  ${contributing}
   
   
   ## Tests
-  ${data.tests}
+  ${tests}
   
   ## Questions
-  This project was developed by ${[data.gitUserName]}${(gitUserLink)}.
-  Please email any questions to ${data.userEmail}.
+  This project was developed by ${[gitUserName]}${(gitUserLink)}.
+  Please email any questions to ${userEmail}.
 `;
 }
 
