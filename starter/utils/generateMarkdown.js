@@ -49,6 +49,7 @@ function generateMarkdown(data) {
   }
 
   const readmeContent = `# ${title}
+  ${licenseBadge}
   
   ## Description
   ${description}
@@ -70,7 +71,7 @@ function generateMarkdown(data) {
   
   ## Licence
   
-  This project uses ${license}.
+  This project uses [${license}](${licenseLink}) license.
   
   ## Contributing
   ${contributing}
