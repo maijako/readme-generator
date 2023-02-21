@@ -18,22 +18,16 @@ function generateMarkdown(data) {
   } = data;
 
   //switch case for the license variable to store user selected data and badge
-  switch(operation) {
-    case "sum":
-        console.log(maths.sum(numOne, numTwo));
-        break;
-    case "difference":
-        console.log(maths.difference(numOne, numTwo));
-        break;
-    case "product":
-        console.log(maths.product(numOne, numTwo));
-        break;
-    case "quotient":
-        console.log(maths.quotient(numOne, numTwo));
-        break;
-}
+  switch (license) {
+    case 'MIT':
 
-  const readmeContents = `# ${title}
+      badgeLink = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      licenseLink = "(https://opensource.org/licenses/MIT)";
+      break;
+     
+  }
+
+  const readmeContent = `# ${title}
   
   ## Description
   ${description}
@@ -68,7 +62,7 @@ function generateMarkdown(data) {
   This project was developed by ${[gitUserName]}${(gitUserLink)}.
   Please email any questions to ${userEmail}.
 `;
-return readmeContents;
+return readmeContent;
 }
 
 module.exports = generateMarkdown;
