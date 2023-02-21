@@ -52,6 +52,7 @@ function generateMarkdown(data) {
   This project was developed by ${[gitUserName]}${(gitUserLink)}.
   Please email any questions to ${userEmail}.
 `;
+return readmeContents;
 }
 
 module.exports = generateMarkdown;
