@@ -1,8 +1,8 @@
-# Project Title
+# {title}
 
 ## Description
+{description}
 
-Project description goes here.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -13,26 +13,26 @@ Project description goes here.
 6. [Questions](#questions)
 
 ## Installation
-Installaiton instructions go here.
+{installation}
 
 ## Usage
+{usage}
 
-App usage goes here.
 
 ## Licence
 
-Licensing options go her for the user to choose from.
+This project uses {license}.
 
 ## Contributing
+{contributing}
 
-List contributors to the project here.
 
 ## Tests
-What tests can be performed
+{tests}
 
 ## Questions
-GitHub username, added as a link to the GitHub profile;
-Email address added here with instructions to reach the user with additional questions.
+This project was developed by {[gitUserName]}{(gitUserLink)}.
+Please email any questions to {userEmail}.
 
 
 
