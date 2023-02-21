@@ -31,7 +31,7 @@ const questions = [
         name: 'license',
         choices: ['Artistic license 2.0', 'Creative Commons Attribution 4.0', 'GNU General Public License v3.0',
         'MIT', 'Open Database License']
-    }
+    },
     {
         type: 'input', 
         message: 'Please add instructions on how users can contribute to your project.',
@@ -61,16 +61,15 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => 
+    err ? console.error(err) : console.log(`ReadMe file ${fileName} generated`));
 }
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((answers) => {
-      const readmeContent = generateMarkdown(answers);
-      const fileName = "generatedREADME.md";
-      writeToFile(fileName, readmeContent);
-    }).catch((err) => {
-      console.log(err);
+      writeToFile("generatedREADME.md", generateMarkdown(answers));
+   
     });
   }
   

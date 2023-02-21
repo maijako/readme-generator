@@ -1,8 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  //variables to store license badge and link date
-  let licenseBadge = ""
-  let licenseLink = ""
+
   //ES6 obj destructuring to avoid re-typing data.variablename
   const {
     title,
@@ -16,6 +14,10 @@ function generateMarkdown(data) {
     gitUserLink,
     userEmail
   } = data;
+
+  //variables to store license badge and link date
+    let licenseBadge = ""
+    let licenseLink = ""
 
   //switch case for the license variable to store user selected data and badge
   switch (license) {
