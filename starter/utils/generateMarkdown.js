@@ -1,5 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  //variables to store license badge and link date
+  let licenseBadge = ""
+  let licenseLink = ""
   return `# ${data.title}
   
   ## Description
