@@ -17,7 +17,7 @@ function generateMarkdown(data) {
     userEmail
   } = data;
 
-  return `# ${title}
+  const readmeContents = `# ${title}
   
   ## Description
   ${description}
