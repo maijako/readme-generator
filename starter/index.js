@@ -29,8 +29,8 @@ const questions = [
         type: 'list', 
         message: 'Select the license type for your project.',
         name: 'license',
-        choices: ['Artistic license 2.0', 'Creative Commons Attribution 4.0', 'Educational Community License v2.0', 'GNU General Public License v3.0',
-        'MIT', 'Open Software License 3.0']
+        choices: ['Artistic license 2.0', 'Creative Commons Attribution 4.0', 'GNU General Public License v3.0',
+        'MIT', 'Open Database License']
     }
     {
         type: 'input', 

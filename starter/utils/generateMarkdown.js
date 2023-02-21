@@ -19,12 +19,30 @@ function generateMarkdown(data) {
 
   //switch case for the license variable to store user selected data and badge
   switch (license) {
-    case 'MIT':
+    case "Artistic license 2.0":
+      licenseBadge = "[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)]";
+      licenseLink = "(https://opensource.org/licenses/Artistic-2.0)";
+      break;
 
-      badgeLink = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      case "Creative Commons Attribution 4.0":
+      licenseBadge = "[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)]";
+      licenseLink = "(https://creativecommons.org/licenses/by/4.0/)";
+      break;
+
+      case "GNU General Public License v3.0":
+      licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+      licenseLink = "(https://www.gnu.org/licenses/gpl-3.0)";
+      break;
+  
+    case 'MIT':
+      licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
       licenseLink = "(https://opensource.org/licenses/MIT)";
       break;
-     
+
+      case 'Open Database License':
+      licenseBadge = "[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)]";
+      licenseLink = "(https://opendatacommons.org/licenses/odbl/)";
+      break;
   }
 
   const readmeContent = `# ${title}
