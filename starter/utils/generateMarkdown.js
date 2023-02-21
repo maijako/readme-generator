@@ -16,8 +16,9 @@ function generateMarkdown(data) {
   } = data;
 
   //variables to store license badge and link date
-    let licenseBadge = ""
-    let licenseLink = ""
+    let licenseBadge = "";
+    let licenseLink = "";
+    
 
   //switch case for the license variable to store user selected data and badge
   switch (license) {
@@ -79,7 +80,7 @@ function generateMarkdown(data) {
   ${tests}
   
   ## Questions
-  This project was developed by ${[gitUserName]}${(gitUserLink)}.
+  Developer GitHub profile: [${gitUserName}](${gitUserLink}).
   Please email any questions to ${userEmail}.
 `;
 return readmeContent;
