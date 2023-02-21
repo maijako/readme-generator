@@ -17,6 +17,22 @@ function generateMarkdown(data) {
     userEmail
   } = data;
 
+  //switch case for the license variable to store user selected data and badge
+  switch(operation) {
+    case "sum":
+        console.log(maths.sum(numOne, numTwo));
+        break;
+    case "difference":
+        console.log(maths.difference(numOne, numTwo));
+        break;
+    case "product":
+        console.log(maths.product(numOne, numTwo));
+        break;
+    case "quotient":
+        console.log(maths.quotient(numOne, numTwo));
+        break;
+}
+
   const readmeContents = `# ${title}
   
   ## Description
