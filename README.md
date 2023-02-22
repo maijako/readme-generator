@@ -14,9 +14,9 @@ This is a code for a command-line application that dynamically generates a profe
     ```bash
     node index.js
     ```
-  ## Credits
-
-    The source code and the original asset files were provided by [Trilogy Education](https://2u.com/) as part of the Front End Web Development bootcamp sponsored by the [Skills For Life](https://skillsforlife.edx.org/) program.
+ 
+ ## Credits
+The source code and the original asset files were provided by [Trilogy Education](https://2u.com/) as part of the Front End Web Development bootcamp sponsored by the [Skills For Life](https://skillsforlife.edx.org/) program.
   
   ## Licence
   
